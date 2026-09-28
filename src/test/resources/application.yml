@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+  flyway:
+    enabled: false
+
+security:
+  jwt:
+    secret: test-secret-value-that-is-long-enough-to-satisfy-hmac-sha-256-requirement
+    expiration-ms: 3600000
+    refresh-expiration-ms: 604800000
+
+github:
+  api-base-url: https://api.github.com
+  token: ""
+
+ai:
+  provider: openai
+  base-url: https://api.openai.com/v1
+  api-key: ""
+  model: gpt-4o-mini
+  azure-deployment: ""
+  azure-api-version: 2024-06-01
+  timeout-seconds: 30
