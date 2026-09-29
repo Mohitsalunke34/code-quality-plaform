@@ -59,7 +59,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/code_quality_platform?createDatabaseIfNotExist=true
     username: root
-    password: Salunke@123
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:

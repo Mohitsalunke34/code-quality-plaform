@@ -45,7 +45,7 @@ public class AiAnalysisServiceImpl implements AiAnalysisService {
         this.objectMapper = objectMapper;
     }
 
-    @Override
+//    @Override
     public AiAnalysisResult analyzeFile(SourceFile file) {
         if (!StringUtils.hasText(props.apiKey())) {
             throw new ExternalServiceException("AI provider is not configured (missing ai.api-key)");
